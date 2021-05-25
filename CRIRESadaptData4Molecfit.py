@@ -4,7 +4,7 @@ from astropy.io import fits
 import sys
 
 fi = sys.argv[1] # input file you want to convert
-prefix = sys.argv[2] # name for output file
+output = sys.argv[2] # name for output file
 
 hd = fits.open(fi) # open data fits file
 primary_hdu = hd[0]  # keep primary HDU with header
@@ -35,5 +35,5 @@ col2winc = fits.Column(name='UPPER_LIMIT', format='D', array=wmax)
 col3winc = fits.Column(name='MAPPED_TO_CHIP', format='I', array=map2chip)
 table_hdu_winc = fits.BinTableHDU.from_columns([col1winc, col2winc,col3winc])
 hdulwinc.append(table_hdu_winc)
-hdul.writeto(prefix+'.fits', overwrite=True)
+hdul.writeto(output, overwrite=True)
 hdulwinc.writeto('WAVE_INCLUDE.fits', overwrite=True)
