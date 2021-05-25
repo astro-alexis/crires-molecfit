@@ -6,13 +6,16 @@
 
 3. run **molecfit.sh**
 
+---
+
+If you want to plot the result from `molecfit_model`:
+```
 from astropy.io import fits
 import numpy as np
 import matplotlib.pyplot as plt
 import glob
 f = 'MODEL/BEST_FIT_MODEL.fits'
 hd = fits.open(f)
-```
 for i in range(len(hd)-1):
 	ii = np.argsort(hd[1].data['lambda'])
 	plt.plot(hd[i+1].data['lambda'][ii], hd[i+1].data['mflux'][ii], color="C0", linewidth=2)
