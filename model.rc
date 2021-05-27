@@ -431,7 +431,7 @@ PWV=-1.0
 # --LNFL_LINE_DB
 # File name of the line list (must be stored in the directory :
 # ({TELLURICCORR_DATA_PATH}/hitran/).
-LNFL_LINE_DB=aer_v_3.8
+LNFL_LINE_DB=aer_v_3.6
 
 # --LNFL_LINE_DB_FORMAT
 # Format of the line file: gives the length in terms of characters per line.
@@ -594,7 +594,7 @@ EXPERT_MODE=FALSE
 # Value = TRUE implies to treat as CHIPS to be combined. Value = FALSE
 # implies
 # to treat as independent. [FALSE].
-CHIP_EXTENSIONS=FALSE
+CHIP_EXTENSIONS=TRUE
 
 #
 # End of file
