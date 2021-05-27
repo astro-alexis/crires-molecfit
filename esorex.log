@@ -1,0 +1,407 @@
+
+Start time     : 2021-05-27T16:36:13
+Program name   : esorex
+Severity level : [ INFO  ] 
+
+16:36:13 [ INFO  ] : [tid=000] This is EsoRex, version 3.13
+16:36:13 [ INFO  ] : [tid=000] using the libraries: CPL = 7.1, CFITSIO = 3.43, WCSLIB, FFTW (normal precision) = 3.3.7-sse2, FFTW (single precision) = 3.3.7-sse2, CPL FLOP counting is unavailable, enable with -DCPL_ADD_FLOPS, OPENMP = 201511
+16:36:13 [ INFO  ] : [tid=000] Invocation command line was: esorex --output-dir=CALCTRANS --recipe-config=calctrans.rc molecfit_calctrans calctrans.sof
+16:36:13 [WARNING] cpl_recipedefine_init: [tid=000] Run-time version 7.1 of CPL is lower than the version (70103) used to compile molecfit_correct
+16:36:13 [WARNING] cpl_recipedefine_init: [tid=000] Run-time version 7.1 of CPL is lower than the version (70103) used to compile molecfit_model
+16:36:13 [WARNING] cpl_recipedefine_init: [tid=000] Run-time version 7.1 of CPL is lower than the version (70103) used to compile molecfit_calctrans
+16:36:13 [WARNING] cpl_recipedefine_init: [tid=000] Run-time version 7.1 of CPL is lower than the version (70103) used to compile molecfit_calctrans
+16:36:13 [ INFO  ] molecfit_calctrans: [tid=000] Check frameset (SOF tags) ...
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[obs/Pi2Ori-210220-K2217.fits] - Check FITS file format ... (Searching first extension with data)
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[obs/Pi2Ori-210220-K2217.fits] - Load  header in the extension[0]
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[obs/Pi2Ori-210220-K2217.fits] - Check data   in the extension[0] : KEYWORD[NAXIS] = 0
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[obs/Pi2Ori-210220-K2217.fits] - Load  header in the extension[1]
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[obs/Pi2Ori-210220-K2217.fits] - Check data   in the extension[1] : KEYWORD[NAXIS] = 2
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[obs/Pi2Ori-210220-K2217.fits] - Check           in the extension[1]: KEYWORD[XTENSION] = BINTABLE
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[obs/Pi2Ori-210220-K2217.fits] - Found format = BINTABLE!
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] File[obs/Pi2Ori-210220-K2217.fits] - Loading FITS header/data ... (all extensions)
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=0) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=1) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=1) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=2) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=2) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=3) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=3) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=4) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=4) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=5) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=5) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=6) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=6) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=7) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=7) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=8) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=8) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=9) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=9) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=10) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=10) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=11) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=11) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=12) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=12) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=13) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=13) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=14) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=14) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=15) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=15) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=16) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=16) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=17) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=17) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: obs/Pi2Ori-210220-K2217.fits (extension=18) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: obs/Pi2Ori-210220-K2217.fits (extension=18) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_calctrans: [tid=000] Load 'molecfit_calctrans' recipe parameters ...
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[0] to {0}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[1] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[2] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[3] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[4] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[5] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[6] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[7] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[8] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[9] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[10] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[11] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[12] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[13] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[14] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[15] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[16] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[17] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[ATM_PARAMETERS_EXT] : Mapping input extension[18] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] cpl_table *mappingtab loaded :
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[LBLRTM_RESULTS_EXT] : Mapping input extension[0] to {0}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] Column[LBLRTM_RESULTS_EXT] : Mapping input extension[1] to {1}
+16:36:13 [ INFO  ] molecfit_config_table_mapping: [tid=000] cpl_table *mappingtab loaded :
+16:36:13 [ INFO  ] molecfit_calctrans_parameters: [tid=000] Load ATM_PARAMETERS from molecfit_model(...)
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/ATM_PARAMETERS.fits] - Check FITS file format ... (Searching first extension with data)
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/ATM_PARAMETERS.fits] - Load  header in the extension[0]
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/ATM_PARAMETERS.fits] - Check data   in the extension[0] : KEYWORD[NAXIS] = 0
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/ATM_PARAMETERS.fits] - Load  header in the extension[1]
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/ATM_PARAMETERS.fits] - Check data   in the extension[1] : KEYWORD[NAXIS] = 2
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/ATM_PARAMETERS.fits] - Check           in the extension[1]: KEYWORD[XTENSION] = BINTABLE
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/ATM_PARAMETERS.fits] - Found format = BINTABLE!
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] File[MODEL/ATM_PARAMETERS.fits] - Loading FITS header/data ... (all extensions)
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: MODEL/ATM_PARAMETERS.fits (extension=0) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: MODEL/ATM_PARAMETERS.fits (extension=1) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: MODEL/ATM_PARAMETERS.fits (extension=1) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_calctrans_parameters: [tid=000] Load BEST_FIT_PARAMETERS from molecfit_model(...)
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/BEST_FIT_PARAMETERS.fits] - Check FITS file format ... (Searching first extension with data)
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/BEST_FIT_PARAMETERS.fits] - Load  header in the extension[0]
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/BEST_FIT_PARAMETERS.fits] - Check data   in the extension[0] : KEYWORD[NAXIS] = 0
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/BEST_FIT_PARAMETERS.fits] - Load  header in the extension[1]
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/BEST_FIT_PARAMETERS.fits] - Check data   in the extension[1] : KEYWORD[NAXIS] = 2
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/BEST_FIT_PARAMETERS.fits] - Check           in the extension[1]: KEYWORD[XTENSION] = BINTABLE
+16:36:13 [ INFO  ] molecfit_fits_get_file_format: [tid=000] File[MODEL/BEST_FIT_PARAMETERS.fits] - Found format = BINTABLE!
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] File[MODEL/BEST_FIT_PARAMETERS.fits] - Loading FITS header/data ... (all extensions)
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: MODEL/BEST_FIT_PARAMETERS.fits (extension=0) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_propertylist file: MODEL/BEST_FIT_PARAMETERS.fits (extension=1) --> [HEADER   ]
+16:36:13 [ INFO  ] molecfit_fits_load: [tid=000] Loaded cpl_table        file: MODEL/BEST_FIT_PARAMETERS.fits (extension=1) --> [BINTABLE ]
+16:36:13 [ INFO  ] molecfit_config_load_header_parameters: [tid=000] Loading input parameters saved in a output FITS header ...
+16:36:13 [ INFO  ] molecfit_config_load_header_parameters: [tid=000] Load Molecfit default configuration ...
+16:36:13 [ INFO  ] mf_parameters_config_create: [tid=000] (mf_parameters) Not exist environment variable TELLURICCORRDIR      --> telluriccorr_path = /home/alexis/pipes
+16:36:13 [ INFO  ] mf_parameters_config_create: [tid=000] (mf_parameters) Not exist environment variable TELLURICCORRDIR_DATA --> telluriccorr_data_path = /home/alexis/pipes/share/molecfit/data
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Updating mf_parameters_config with the user provided data header ... !
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Input MJD-OBS = 59266.070093
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Convert MJD into date in years [59266.070093 => 2021.139918]
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get OBSERVING_DATE_KEYWORD from header KEYWORD[MJD-OBS] = 2021.139918
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get UTC_KEYWORD from header KEYWORD[UTC] = 6055
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get TELESCOPE_ANGLE_KEYWORD from header KEYWORD[ESO TEL ALT] = 43.457
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get RELATIVE_HUMIDITY_KEYWORD from header KEYWORD[ESO TEL AMBI RHUM] = 7
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get PRESSURE_KEYWORD from header KEYWORD[ESO TEL AMBI PRES START] = 745.6
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get TEMPERATURE_KEYWORD from header KEYWORD[ESO TEL AMBI TEMP] = 13.31
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get MIRROR_TEMPERATURE_KEYWORD from header KEYWORD[ESO TEL TH M1 TEMP] = 10.63
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get ELEVATION_KEYWORD from header KEYWORD[ESO TEL GEOELEV] = 2648
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get LONGITUDE_KEYWORD from header KEYWORD[ESO TEL GEOLON] = -70.4045
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get LATITUDE_KEYWORD from header KEYWORD[ESO TEL GEOLAT] = -24.6268
+16:36:13 [ INFO  ] mf_parameters_config_update_with_header_keywords: [tid=000] (mf_parameters) Get SLIT_WIDTH_KEYWORD from header KEYWORD[ESO INS SLIT1 WID] = 0.4
+16:36:13 [ INFO  ] molecfit_config_load_header_parameters: [tid=000] Columns : wave[WAVE], flux[SPEC], dflux[NULL], mask[NULL]
+16:36:13 [ INFO  ] molecfit_calctrans: [tid=000] Not fit wavelength!
+16:36:13 [ INFO  ] molecfit_calctrans: [tid=000] Not fit continuum!
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[1] - Extract cpl_table from cpl_table (chip=1)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[2] - Extract cpl_table from cpl_table (chip=2)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[3] - Extract cpl_table from cpl_table (chip=3)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[4] - Extract cpl_table from cpl_table (chip=4)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[5] - Extract cpl_table from cpl_table (chip=5)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[6] - Extract cpl_table from cpl_table (chip=6)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[7] - Extract cpl_table from cpl_table (chip=7)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[8] - Extract cpl_table from cpl_table (chip=8)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[9] - Extract cpl_table from cpl_table (chip=9)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[10] - Extract cpl_table from cpl_table (chip=10)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[11] - Extract cpl_table from cpl_table (chip=11)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[12] - Extract cpl_table from cpl_table (chip=12)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[13] - Extract cpl_table from cpl_table (chip=13)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[14] - Extract cpl_table from cpl_table (chip=14)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[15] - Extract cpl_table from cpl_table (chip=15)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[16] - Extract cpl_table from cpl_table (chip=16)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[17] - Extract cpl_table from cpl_table (chip=17)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] File[obs/Pi2Ori-210220-K2217.fits], ext[18] - Extract cpl_table from cpl_table (chip=18)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=2] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=3] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=4] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=5] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=6] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=7] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=8] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=9] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=10] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=11] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=12] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=13] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=14] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=15] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=16] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=17] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] Combine data->molecfit_spectrum[ext=18] into first extension (data->molecfit_spectrum[1])
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] DATA for molecfit :  Combined extension[1] (number original spectrums = 18)
+16:36:13 [ INFO  ] molecfit_data_convert_to_table: [tid=000] DATA for molecfit :  Show spectrum cpl_table combined structure extension[1]
+16:36:13 [ INFO  ] molecfit_calctrans: [tid=000] Save combined multi-extension molecfit_spectrum input FITS file ('CALCTRANS_CHIPS_COMBINED') in ext=1 ...
+16:36:13 [ INFO  ] cpl_dfs_product_save: [tid=000] Writing FITS propertylist product(CALCTRANS_CHIPS_COMBINED): CALCTRANS_CHIPS_COMBINED.fits
+16:36:13 [ INFO  ] molecfit_calctrans: [tid=000] Loading MODEL_MOLECULES cpl_table
+16:36:13 [ INFO  ] molecfit_load_table: [tid=000] Tag = MODEL_MOLECULES, File = MODEL/MODEL_MOLECULES.fits : Loaded 'cpl_table *' in extension 1 ...
+16:36:13 [ INFO  ] molecfit_load_kernel_tag: [tid=000] Using the synthetic kernels ...
+16:36:13 [ INFO  ] molecfit_load_kernel_tag: [tid=000] Fit resolution by Boxcar   (--FIT_RES_BOX) = 1
+16:36:13 [ INFO  ] molecfit_load_kernel_tag: [tid=000] Fit resolution by Gaussian (--FIT_RES_GAUSS) = 1
+16:36:13 [ INFO  ] molecfit_load_kernel_tag: [tid=000] Fit resolution by Lorentz  (--FIT_RES_LORENTZ) = 1
+16:36:13 [ INFO  ] molecfit_calctrans: [tid=000] Using the default molecfit kernels -> With the values inside BEST_FIT_PARMS!
+16:36:13 [ INFO  ] molecfit_calctrans: [tid=000] Save generic multi-extension output FITS file ('TELLURIC_DATA','TELLURIC_CORR') ...
+16:36:13 [ INFO  ] cpl_dfs_product_save: [tid=000] Writing FITS propertylist product(LBLRTM_RESULTS): LBLRTM_RESULTS.fits
+16:36:13 [ INFO  ] cpl_dfs_product_save: [tid=000] Writing FITS propertylist product(TELLURIC_DATA): TELLURIC_DATA.fits
+16:36:13 [ INFO  ] cpl_dfs_product_save: [tid=000] Writing FITS propertylist product(TELLURIC_CORR): TELLURIC_CORR.fits
+16:36:14 [ INFO  ] molecfit_calctrans: [tid=000] Load spectrum for execute mf_calctrans_lblrtm(...) in ext = 1 ...
+16:36:14 [ INFO  ] mf_io_mkstemp: [tid=000] (mf_io        ) Using temporary path defined by default/user = /home/alexis/pCOMM/crires-molecfit-repo
+16:36:14 [ INFO  ] mf_parameters_create: [tid=000] (mf_parameters) Created new temporary workspace in /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] fit_wavelength n=2, nwlc=3
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=0
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=1
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=2
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=3
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=4
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=5
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=6
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=7
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=8
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=9
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=10
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=11
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=12
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=13
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=14
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=15
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=16
+16:36:14 [ INFO  ] mf_spectrum_fill_parameter_table: [tid=000] --> NSEL =2048 CHIP_INDEX=17
+16:36:14 [ INFO  ] mf_spectrum_ranges_apply: [tid=000] This is a single chip run amd some ranges are being mapped to chips not being used in this run
+16:36:14 [ INFO  ] mf_spectrum_ranges_apply: [tid=000] (mf_spectrum  ) Fit full spectrum (not provided inc_wranges fit ranges)
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] Number of physical wavelength ranges=18
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 1 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 2 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 3 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 4 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 5 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 6 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 7 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 8 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 9 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 10 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 11 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 12 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 13 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 14 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 15 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 16 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 17 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for range 18 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] EXPERT MODE FLAG=FALSE
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] nchip=18. Polynomial order=2
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 1 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 2 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 3 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 4 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 5 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 6 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 7 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 8 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 9 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 10 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 11 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 12 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 13 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 14 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 15 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 16 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 17 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] No external definition of fit flag for chip 18 Parameter flag set to 0
+16:36:14 [ INFO  ] mf_spectrum_replace_coefficients: [tid=000] EXPERT MODE FLAG=FALSE
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) wlcparmin = 5
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) wlcparmax = 58
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) nwlc      = 3
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=00],          STATUS -->          status : 2
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=13],        BOX_FWHM -->         boxfwhm : 0
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=15],      GAUSS_FWHM -->       gaussfwhm : 4.9765
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=16],    LORENTZ_FWHM -->     lorentzfwhm : 0
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=17],        FIT_CHIP -->  chip 1, coef 0 : -0.0154899 [fitCoefIndex=5]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=18],        FIT_CHIP -->  chip 1, coef 1 : 0.990054 [fitCoefIndex=6]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=19],        FIT_CHIP -->  chip 1, coef 2 : 0.013497 [fitCoefIndex=7]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=20],        FIT_CHIP -->  chip 2, coef 0 : 5.87059e-05 [fitCoefIndex=8]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=21],        FIT_CHIP -->  chip 2, coef 1 : 1.0056 [fitCoefIndex=9]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=22],        FIT_CHIP -->  chip 2, coef 2 : -0.0015322 [fitCoefIndex=10]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=23],        FIT_CHIP -->  chip 3, coef 0 : -0.00758058 [fitCoefIndex=11]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=24],        FIT_CHIP -->  chip 3, coef 1 : 1.00011 [fitCoefIndex=12]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=25],        FIT_CHIP -->  chip 3, coef 2 : -0.00477325 [fitCoefIndex=13]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=26],        FIT_CHIP -->  chip 4, coef 0 : -0.00886152 [fitCoefIndex=14]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=27],        FIT_CHIP -->  chip 4, coef 1 : 1.00044 [fitCoefIndex=15]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=28],        FIT_CHIP -->  chip 4, coef 2 : -0.00371471 [fitCoefIndex=16]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=29],        FIT_CHIP -->  chip 5, coef 0 : -0.00133328 [fitCoefIndex=17]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=30],        FIT_CHIP -->  chip 5, coef 1 : 1.00352 [fitCoefIndex=18]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=31],        FIT_CHIP -->  chip 5, coef 2 : -0.00134603 [fitCoefIndex=19]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=32],        FIT_CHIP -->  chip 6, coef 0 : -0.0294274 [fitCoefIndex=20]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=33],        FIT_CHIP -->  chip 6, coef 1 : 1.01345 [fitCoefIndex=21]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=34],        FIT_CHIP -->  chip 6, coef 2 : 0.00744704 [fitCoefIndex=22]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=35],        FIT_CHIP -->  chip 7, coef 0 : -0.00281515 [fitCoefIndex=23]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=36],        FIT_CHIP -->  chip 7, coef 1 : 1.00127 [fitCoefIndex=24]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=37],        FIT_CHIP -->  chip 7, coef 2 : 0.000502906 [fitCoefIndex=25]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=38],        FIT_CHIP -->  chip 8, coef 0 : -0.000741321 [fitCoefIndex=26]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=39],        FIT_CHIP -->  chip 8, coef 1 : 1.00357 [fitCoefIndex=27]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=40],        FIT_CHIP -->  chip 8, coef 2 : -0.000662064 [fitCoefIndex=28]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=41],        FIT_CHIP -->  chip 9, coef 0 : 0.000159346 [fitCoefIndex=29]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=42],        FIT_CHIP -->  chip 9, coef 1 : 1.00229 [fitCoefIndex=30]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=43],        FIT_CHIP -->  chip 9, coef 2 : 0.000461264 [fitCoefIndex=31]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=44],        FIT_CHIP --> chip 10, coef 0 : 0.09769 [fitCoefIndex=32]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=45],        FIT_CHIP --> chip 10, coef 1 : 1.12147 [fitCoefIndex=33]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=46],        FIT_CHIP --> chip 10, coef 2 : 0.160343 [fitCoefIndex=34]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=47],        FIT_CHIP --> chip 11, coef 0 : -0.000808007 [fitCoefIndex=35]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=48],        FIT_CHIP --> chip 11, coef 1 : 0.997488 [fitCoefIndex=36]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=49],        FIT_CHIP --> chip 11, coef 2 : -0.000419224 [fitCoefIndex=37]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=50],        FIT_CHIP --> chip 12, coef 0 : 0.0332588 [fitCoefIndex=38]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=51],        FIT_CHIP --> chip 12, coef 1 : 1.04065 [fitCoefIndex=39]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=52],        FIT_CHIP --> chip 12, coef 2 : 0.0820059 [fitCoefIndex=40]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=53],        FIT_CHIP --> chip 13, coef 0 : 0.0333943 [fitCoefIndex=41]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=54],        FIT_CHIP --> chip 13, coef 1 : 1.02108 [fitCoefIndex=42]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=55],        FIT_CHIP --> chip 13, coef 2 : 0.111081 [fitCoefIndex=43]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=56],        FIT_CHIP --> chip 14, coef 0 : -0.0162597 [fitCoefIndex=44]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=57],        FIT_CHIP --> chip 14, coef 1 : 0.993864 [fitCoefIndex=45]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=58],        FIT_CHIP --> chip 14, coef 2 : -0.0179536 [fitCoefIndex=46]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=59],        FIT_CHIP --> chip 15, coef 0 : -0.00178191 [fitCoefIndex=47]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=60],        FIT_CHIP --> chip 15, coef 1 : 1.00128 [fitCoefIndex=48]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=61],        FIT_CHIP --> chip 15, coef 2 : -0.00106337 [fitCoefIndex=49]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=62],        FIT_CHIP --> chip 16, coef 0 : -0.00454504 [fitCoefIndex=50]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=63],        FIT_CHIP --> chip 16, coef 1 : 0.977701 [fitCoefIndex=51]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=64],        FIT_CHIP --> chip 16, coef 2 : -0.0322345 [fitCoefIndex=52]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=65],        FIT_CHIP --> chip 17, coef 0 : -0.000882447 [fitCoefIndex=53]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=66],        FIT_CHIP --> chip 17, coef 1 : 0.99749 [fitCoefIndex=54]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=67],        FIT_CHIP --> chip 17, coef 2 : -0.000133635 [fitCoefIndex=55]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=68],        FIT_CHIP --> chip 18, coef 0 : -0.00692358 [fitCoefIndex=56]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=69],        FIT_CHIP --> chip 18, coef 1 : 0.973526 [fitCoefIndex=57]
+16:36:14 [ INFO  ] mf_calctrans_best_fit_parameters: [tid=000] (mf_calctrans ) Read mf_model(...) fit parameters[index=70],        FIT_CHIP --> chip 18, coef 2 : -0.00889906 [fitCoefIndex=58]
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.375 - 2.396 µm (Range:   1)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_1/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.281 - 2.300 µm (Range:   2)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_2/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.193 - 2.212 µm (Range:   3)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_3/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.112 - 2.130 µm (Range:   4)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_4/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.037 - 2.054 µm (Range:   5)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_5/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 1.966 - 1.982 µm (Range:   6)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_6/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.391 - 2.411 µm (Range:   7)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_7/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.296 - 2.314 µm (Range:   8)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_8/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.208 - 2.225 µm (Range:   9)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_9/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.126 - 2.143 µm (Range:  10)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_10/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.050 - 2.066 µm (Range:  11)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_11/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 1.979 - 1.995 µm (Range:  12)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_12/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.406 - 2.424 µm (Range:  13)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_13/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.310 - 2.328 µm (Range:  14)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_14/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.221 - 2.238 µm (Range:  15)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_15/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.139 - 2.156 µm (Range:  16)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_16/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 2.063 - 2.078 µm (Range:  17)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_17/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Configuring LNFL   for 1.992 - 2.007 µm (Range:  18)
+16:36:14 [ INFO  ] mf_io_write_lnfl_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/wdir_lnfl_range_18/TAPE5
+16:36:14 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) Executing external calls to the LNFL binary ...
+16:36:51 [ INFO  ] mf_lnfl: [tid=000] (mf_lnfl      ) User-time execution of LNFL : 9.59722 min (TOTAL : 9.59722 min)
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_1_lblrtm_call_1/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_2_lblrtm_call_2/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_3_lblrtm_call_3/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_4_lblrtm_call_4/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_5_lblrtm_call_5/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_6_lblrtm_call_6/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_7_lblrtm_call_7/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_8_lblrtm_call_8/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_9_lblrtm_call_9/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_10_lblrtm_call_10/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_11_lblrtm_call_11/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_12_lblrtm_call_12/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_13_lblrtm_call_13/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_14_lblrtm_call_14/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_15_lblrtm_call_15/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_16_lblrtm_call_16/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_17_lblrtm_call_17/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_io_write_lblrtm_configuration: [tid=000] (mf_io        ) Write output ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_18_lblrtm_call_18/wv_number_0/TAPE5
+16:36:51 [ INFO  ] mf_lblrtm_range_execution: [tid=000] (mf_lblrtm    ) Executing external calls to the LBLRTM binary ...
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_1_lblrtm_call_1/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_1_lblrtm_call_1/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_2_lblrtm_call_2/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_2_lblrtm_call_2/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_3_lblrtm_call_3/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_3_lblrtm_call_3/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_4_lblrtm_call_4/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_4_lblrtm_call_4/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_5_lblrtm_call_5/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_5_lblrtm_call_5/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_6_lblrtm_call_6/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_6_lblrtm_call_6/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_7_lblrtm_call_7/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_7_lblrtm_call_7/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_8_lblrtm_call_8/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_8_lblrtm_call_8/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_9_lblrtm_call_9/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_9_lblrtm_call_9/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_10_lblrtm_call_10/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_10_lblrtm_call_10/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_11_lblrtm_call_11/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_11_lblrtm_call_11/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_12_lblrtm_call_12/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_12_lblrtm_call_12/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_13_lblrtm_call_13/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_13_lblrtm_call_13/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_14_lblrtm_call_14/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_14_lblrtm_call_14/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_15_lblrtm_call_15/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_15_lblrtm_call_15/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_16_lblrtm_call_16/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_16_lblrtm_call_16/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_17_lblrtm_call_17/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_17_lblrtm_call_17/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_io_find_klim: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_18_lblrtm_call_18/TAPE28_1 (mf_lblrtm_find_klim)
+16:36:53 [ INFO  ] mf_io_read_lblrtm_and_update_spec: [tid=000] (mf_io        ) Load ASCII file: /home/alexis/pCOMM/crires-molecfit-repo/telluriccorr_tmp_folder_qEu9Td/run_0_wdir_lblrtm_range_18_lblrtm_call_18/TAPE28_1 (mf_lblrtm_rebin_spectrum)
+16:36:53 [ INFO  ] mf_calctrans_lblrtm: [tid=000] (mf_calctrans ) time_bin_lnfl      : 9.60 min
+16:36:53 [ INFO  ] mf_calctrans_lblrtm: [tid=000] (mf_calctrans ) time_bin_lblrtm    : 0.35 min
+16:36:53 [ INFO  ] mf_calctrans_lblrtm: [tid=000] (mf_calctrans ) time_bin_calls     : 9.95 min
+16:36:53 [ INFO  ] mf_calctrans_lblrtm: [tid=000] (mf_calctrans ) time_telluriccorr  : 27035426.95 min
+16:36:53 [ INFO  ] mf_calctrans_lblrtm: [tid=000] (mf_calctrans ) time_total         : 27035436.90 min
+16:36:53 [ ERROR ] cpl_errorstate_dump_one_level: [tid=000] Dumping all 1 error(s):
+16:36:53 [ ERROR ] cpl_errorstate_dump_one_level: [tid=000]   [1/1] 'Input data do not match: Cannot find lblrtm_results. Please check the incorrectly set MAPPING_CONVOLVE parameter.' (13) at molecfit_calctrans:molecfit_calctrans.c:515
+16:36:53 [ ERROR ] molecfit_calctrans: [tid=000] Recipe failed!, error(13)=Input data do not match: Cannot find lblrtm_results. Please check the incorrectly set MAPPING_CONVOLVE parameter.
+16:36:53 [ ERROR ] cpl_errorstate_dump_one_level: [tid=000] Dumping all 1 error(s):
+16:36:53 [ ERROR ] cpl_errorstate_dump_one_level: [tid=000]   [1/1] 'Input data do not match: Cannot find lblrtm_results. Please check the incorrectly set MAPPING_CONVOLVE parameter.' (13) at molecfit_calctrans:molecfit_calctrans.c:515
+16:36:53 [ ERROR ] : [tid=000] Execution of recipe 'molecfit_calctrans' failed, status = 13
+16:36:53 [ INFO  ] : [tid=000] Calculating product checksums
