@@ -10,7 +10,9 @@ hd = fits.open(fi) # open data fits file
 primary_hdu = hd[0]  # keep primary HDU with header
 hdul = fits.HDUList([primary_hdu]) # initialize output HDU list with primary HDU
 hdulwinc = fits.HDUList([primary_hdu]) # initialise wave include HDU list
-wmin,wmax,map2chip = [], [], [] # initialize empty arrays
+hdulatm =  fits.HDUList([primary_hdu]) # initialise ATM_PARAMETERS_EXT HDU list
+
+wmin,wmax,map2chip, atm_parms_ext = [], [], [], [] # initialize empty arrays
 jjj = 1 # initialize counter for order/detector
 
 for idet in range(3): # loop on detectors
@@ -28,6 +30,10 @@ for idet in range(3): # loop on detectors
         wmin.append(np.min(w)*0.001) # append wmin for given order to wmin array
         wmax.append(np.max(w)*0.001) # append wmax for giver order to wmax array
         map2chip.append(jjj) # append order counter to map2chip
+        if jjj == 1:
+            atm_parms_ext.append(0)
+        else:
+            atm_parms_ext.append(1)
         jjj+=1
 
 col1winc = fits.Column(name='LOWER_LIMIT', format='D', array=wmin)
@@ -37,3 +43,7 @@ table_hdu_winc = fits.BinTableHDU.from_columns([col1winc, col2winc,col3winc])
 hdulwinc.append(table_hdu_winc)
 hdul.writeto(output, overwrite=True)
 hdulwinc.writeto('WAVE_INCLUDE.fits', overwrite=True)
+col1atm = fits.Column(name='ATM_PARAMETERS_EXT', format='I', array=atm_parms_ext)
+table_hdu_atm = fits.BinTableHDU.from_columns([col1atm])
+hdulatm.append(table_hdu_atm)
+hdulatm.writeto('MAPPING_ATMOSPHERIC.fits', overwrite=True)

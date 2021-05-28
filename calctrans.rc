@@ -46,7 +46,7 @@ CALCTRANS_MAPPING_KERNEL=NULL
 # If set to NULL, check if the TAG[MAPPING_ATMOSPHERIC] FITS BINTABLE value
 # is provided.
 # The FITS BINTABLE have to one column [ATM_PARAMETERS_EXT].
-MAPPING_ATMOSPHERIC=0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+MAPPING_ATMOSPHERIC=NULL
 
 # --MAPPING_CONVOLVE
 # Mapping 'LBLRTM_RESULTS' - 'TELLURIC_CORR' output [string with ext_number
@@ -54,7 +54,7 @@ MAPPING_ATMOSPHERIC=0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 # If set to NULL, check if the TAG[MAPPING_CONVOLVE] FITS BINTABLE value is
 # provided.
 # The FITS BINTABLE have to one column [LBLRTM_RESULTS_EXT].
-MAPPING_CONVOLVE=0,1
+MAPPING_CONVOLVE=1,1
 
 # --CHIP_EXTENSIONS
 # Flag that determines if image extensions are to be treated as independent
