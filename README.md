@@ -2,7 +2,7 @@
 
 `python3 CRIRESadaptData4Molecfit.py obs/cr2res_obs_nodding_extractedA.fits obs/Pi2Ori-210220-K2217.fits`
 
-2. Make sure that **model.sof** file is correct (right SCIENCE file)
+2. Make sure that **model.sof**, **calctrans.sof**, and **model.sof** files are correct (right SCIENCE file)
 
 3. run **molecfit.sh**
 
